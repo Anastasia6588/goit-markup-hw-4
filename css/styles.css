@@ -85,6 +85,7 @@ img {
 	font-size: 14px;
 	line-height: 1.142;
 	letter-spacing: 0.02em;
+	background-color: #fff;
 }
 
 .site-nav-item:not(:last-child) {
@@ -94,6 +95,7 @@ img {
 .site-nav:hover,
 :focus {
 	color: var(--hover-color);
+	background-color: #fff;
 }
 
 .contacts-list {
@@ -106,16 +108,29 @@ img {
 }
 
 .contacts {
+	display: flex;
 	color: var(--special-text-color);
 	font-family: Roboto;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.142;
 	letter-spacing: 0.02em;
+	align-items: center;
 }
 
 .contacts:hover,
 :focus {
+	color: var(--hover-color);
+}
+
+.logo-contacts {
+	margin-right: 10px;
+	background-color: #fff;
+	/*fill: var(--special-text-color);*/
+}
+
+.logo-contacts:hover,
+.logo-contacts:focus {
 	color: var(--hover-color);
 }
 
@@ -125,7 +140,7 @@ img {
 	background-size: cover;
 	text-align: center;
 	align-items: center;
-	max-width: 1200px;
+	max-width: 1600px;
 	padding-top: 200px;
 	padding-bottom: 200px;
 	margin: 0 auto;
@@ -194,6 +209,23 @@ img {
 	margin: 0 auto;
 }
 
+.logo-description {
+	background: #f5f4fa;
+	border-radius: 4px;
+	width: 270px;
+	height: 120px;
+	background-position: center;
+	padding: 25px 100px;
+}
+
+.logo-advantages {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 55px;
+}
+
 .advantages-title {
 	color: var(--main-text-color);
 	font-family: Roboto;
@@ -202,6 +234,7 @@ img {
 	line-height: 1.142;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	margin-top: 30px;
 	margin-bottom: 10px;
 }
 
@@ -297,6 +330,27 @@ img {
 	margin-bottom: 30px;
 }
 
+.clients {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+.clients-title {
+	font-family: Roboto;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 1.166;
+	text-align: center;
+	letter-spacing: 0.03em;
+	padding-bottom: 50px;
+}
+
+.clients-list {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+}
+
 /*footer*/
 
 .footer {
@@ -382,6 +436,7 @@ img {
 	background-color: #f5f4fa;
 	border-color: transparent;
 	border-radius: 4px;
+	padding: 6px 22px;
 }
 
 .general-filter:not(:last-child) {
