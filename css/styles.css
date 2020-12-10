@@ -302,6 +302,7 @@ img {
 	border-radius: 0px 0px 4px 4px;
 	text-align: center;
 	min-height: 368px;
+	width: 270px;
 }
 
 .person-card-title {
@@ -331,15 +332,47 @@ img {
 .social-list {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 auto;
+	padding-bottom: 30px;
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+.social-list-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .social-list-link {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: #ffffff;
+	width: 44px;
+	height: 44px;
 	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.social-list-link:last-child {
+	margin-right: 0;
+}
+
+.social-link-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	fill: var(--special-text-color);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+	background-color: var(--hover-color);
+}
+
+.social-list-link:hover .social-link-icon:hover,
+.social-list-link:focus .social-link-icon:focus {
+	fill: var(--light-text-color);
 }
 
 .clients {
