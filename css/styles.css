@@ -119,19 +119,17 @@ img {
 }
 
 .contacts:hover,
-:focus {
+.contacts-icon:hover,
+.contacts:focus,
+.contacts-icon:focus {
 	color: var(--hover-color);
+	fill: var(--hover-color);
 }
 
-.logo-contacts {
+.contacts-icon {
 	margin-right: 10px;
 	background-color: #fff;
 	/*fill: var(--special-text-color);*/
-}
-
-.logo-contacts:hover,
-.logo-contacts:focus {
-	color: var(--hover-color);
 }
 
 .hero {
@@ -330,6 +328,20 @@ img {
 	margin-bottom: 30px;
 }
 
+.social-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.social-list-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	fill: var(--special-text-color);
+}
+
 .clients {
 	padding-top: 94px;
 	padding-bottom: 94px;
@@ -372,9 +384,7 @@ img {
 .clients-list-item:hover,
 .clients-list-item:focus {
 	border-color: var(--hover-color);
-}
-
-.box {
+	cursor: pointer;
 }
 
 .clients-site {
