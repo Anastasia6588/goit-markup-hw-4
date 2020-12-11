@@ -42,6 +42,7 @@ img {
 	margin-right: 0;
 }
 
+/*===============header===================*/
 .header {
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -420,12 +421,16 @@ img {
 	cursor: pointer;
 }
 
+.clients-logo {
+	fill: #afb1b8;
+}
+
 .clients-list-link:hover .clients-logo,
 .clients-list-link:focus .clients-logo {
 	fill: var(--hover-color);
 }
 
-/*footer*/
+/*==============footer==================*/
 
 .footer {
 	background-color: #2f303a;
@@ -437,12 +442,8 @@ img {
 	display: flex;
 	width: 1200px;
 	margin: 0 auto;
+	align-items: baseline;
 }
-/*.footer-block-address {
-	display: flex;
-	width: 1200px;
-	margin: 0 auto;
-}*/
 
 .logo-footer {
 	font-family: Raleway;
@@ -501,6 +502,10 @@ img {
 	margin-left: 70px;
 }
 
+.footer-join-item:first-child {
+	margin-bottom: 20px;
+}
+
 .footer-social-list {
 	display: flex;
 }
@@ -523,7 +528,7 @@ img {
 	fill: var(--light-text-color);
 }
 
-/*portfolio*/
+/*==============portfolio================*/
 
 .header-portfolio {
 	padding-top: 25px;
@@ -589,6 +594,12 @@ img {
 
 .product-cards-design:nth-child(-1 + 3n) {
 	margin-bottom: 0;
+}
+
+.product-cards-design:hover,
+.product-cards-design:focus {
+	cursor: pointer;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .product-cards-title {
