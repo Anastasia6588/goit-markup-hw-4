@@ -46,6 +46,7 @@ img {
 .header {
 	padding-top: 25px;
 	padding-bottom: 25px;
+	border: 1px solid #ececec;
 }
 
 .navigation-container {
@@ -94,7 +95,7 @@ img {
 }
 
 .site-nav:hover,
-:focus {
+.site-nav:focus {
 	color: var(--hover-color);
 	background-color: #fff;
 }
@@ -123,6 +124,7 @@ img {
 .contacts-icon:hover,
 .contacts:focus,
 .contacts-icon:focus {
+	background-color: #fff;
 	color: var(--hover-color);
 	fill: var(--hover-color);
 }
