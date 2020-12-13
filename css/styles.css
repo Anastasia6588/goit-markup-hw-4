@@ -46,7 +46,7 @@ img {
 .header {
 	padding-top: 25px;
 	padding-bottom: 25px;
-	border: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
 }
 
 .navigation-container {
@@ -88,6 +88,8 @@ img {
 	line-height: 1.142;
 	letter-spacing: 0.02em;
 	background-color: #fff;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav-item:not(:last-child) {
@@ -109,7 +111,7 @@ img {
 	margin-left: 50px;
 }
 
-.contacts {
+.contacts-link {
 	display: flex;
 	color: var(--special-text-color);
 	font-family: Roboto;
@@ -118,21 +120,25 @@ img {
 	line-height: 1.142;
 	letter-spacing: 0.02em;
 	align-items: center;
+
+	transition: all 750ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts:hover,
-.contacts-icon:hover,
-.contacts:focus,
-.contacts-icon:focus {
+.contacts-link:hover,
+.contacts-link:focus {
 	background-color: #fff;
 	color: var(--hover-color);
-	fill: var(--hover-color);
 }
 
 .contacts-icon {
 	margin-right: 10px;
 	background-color: #fff;
-	/*fill: var(--special-text-color);*/
+	fill: var(--special-text-color);
+}
+
+.contacts-link:hover .contacts-icon,
+.contacts-link:focus .contacts-icon {
+	fill: var(--hover-color);
 }
 
 .hero {
@@ -181,9 +187,6 @@ img {
 .container {
 	display: flex;
 }
-/*width: 1200 px;
-	margin: 0 auto;
-}*/
 
 .advantages {
 	padding-top: 94px;
@@ -355,6 +358,8 @@ img {
 	height: 44px;
 	border-radius: 50%;
 	margin-right: 10px;
+
+	transition: color 750ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:last-child {
@@ -411,6 +416,11 @@ img {
 	margin-right: 30px;
 	width: 170px;
 	height: 90px;
+	transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-site {
+	transition: color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-link:last-child {
@@ -440,7 +450,7 @@ img {
 	padding-bottom: 60px;
 }
 
-.footer-composicion {
+.footer-composition {
 	display: flex;
 	width: 1200px;
 	margin: 0 auto;
