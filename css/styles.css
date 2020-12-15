@@ -431,31 +431,24 @@ img {
 
 .clients-list-item:hover .clients-logo,
 .clients-list-item:focus .clients-logo {
-	border-color: var(--hover-color);
 	fill: var(--hover-color);
 }
 
-.clients-site {
+/*.clients-site {
 	display: inline-block;
-}
+}*/
 
-.clients-site:focus {
+/*.clients-site:focus {
 	border-color: var(--hover-color);
-}
-
-.clients-site:active .clients-logo,
-.clients-site:hover .clients-logo,
-.clients-site:focus .clients-logo {
-	fill: var(--hover-color);
-	border-color: var(--hover-color);
-}
+}*/
 
 .clients-logo {
 	fill: #afb1b8;
 }
 
-.clients-logo:hover,
-.clients-logo:focus {
+.clients-site:active .clients-logo,
+.clients-site:hover .clients-logo,
+.clients-site:focus .clients-logo {
 	fill: var(--hover-color);
 }
 
